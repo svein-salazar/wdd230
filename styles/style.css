@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Parisienne&display=swap');
+:root {
+  
+  --primary-color: #004E64   ;
+  --secondary-color: #00A5CF ;
+  --accent1-color: #85E1AE;
+  --accent2-color: #25A18E;
+  --accent3-color: #FFFFFF;
+
+  
+  --heading-font: "EB Garamond", serif;
+  --paragraph-font:"Parisienne", cursive;
+
+  
+  --headline-color-on-white: #004E64;  /* headlines on a white background */ 
+  --headline-color-on-color: #FFFFFF; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #004E64; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #004E64;
+  --nav-link-color: white;
+  --nav-background-color: #25A18E;
+  --nav-hover-link-color: #85E1AE;
+  --nav-hover-background-color: #00A5CF;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-color);
+} 
+
+header > h1, header > h2 {
+    color: var(--headline-color-on-color);
+}
+
+p {
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color-on-color);
+    padding: 1em;
+} 
+
+a {
+  color: var(--nav-hover-link-color);   
+}
+
+body {
+    max-width: 1950px;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    text-align: center;
+    align-content: center;
+    background-color: var(--primary-color);
+}
+
+header {
+    padding: 1em;
+    text-align: center;
+    color: var(--paragraph-color-on-color);
+    background-color: var(--nav-background-color);
+    display: grid;
+    grid-template-columns: 20px 1fr 2fr;
+}
+
+.my_img {
+    width: 180px;
+    grid-column: 2/3;
+    border-radius: 25px;
+}
+
+.my_name {
+    align-self: center;
+    grid-column: 3/4;
+    background-color: var(--nav-hover-link-color);
+    border-radius: 15px;
+}
+
+footer{
+    background-color: var(--accent1-color);
+    align-items: center;
+}
+footer h3{
+    color: var(--headline-color-on-white);
+}
+footer p{
+    color: var(--headline-color-on-white)
+}
